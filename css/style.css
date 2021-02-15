@@ -1,0 +1,158 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(243, 243, 243);
+    display: flex;
+    justify-content: center;
+}
+
+.instagram-wrapper{
+    display: flex;
+    align-items: center; /*alinha do eixo y*/
+    justify-content: start; /* alinha no eixo x*/
+    width: 60%;
+    height: 100vh;
+}
+
+.instagram-phone{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.instagram-phone img{
+    height: 50rem;
+}
+
+.instagram-continua{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 50%;
+    height: 34rem;
+    padding: 10px;
+}
+
+.group{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    width: 100%;
+    border: 1px solid lightgray;
+    padding: 15px;
+}
+
+.group:nth-child(1){
+    min-height: 19rem;
+}
+
+.instagram-logo{
+    height: 3rem;
+}
+
+.profile-photo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 45%;
+    overflow: hidden;
+}
+
+.profile-photo img{
+    height: 8rem;
+}
+
+.instagram-login{
+    background-color: #0095f6;
+    color: white;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.instagram-logout{
+    color: #0095f6;
+    margin-top: 1rem;
+
+}
+
+.not-account{
+    color: rgb(160, 160, 160);
+}
+
+.link-blue{
+    color: royalblue;
+}
+
+.get-the-app{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.download-box{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+}
+
+.download-box .botao{
+    height: 3rem;
+    width: 10rem;
+}
+
+.botao:hover{
+    cursor: pointer;
+}
+
+.botao:nth-child(1){
+    background: url('/projetoInstagram/img/appStore.png');
+    background-size: cover;
+}
+
+.botao:nth-child(2){
+    background-image: url('/projetoInstagram/img/pngwing.png');
+    background-size: cover;
+}
+
+
+
+/*----------------- Responsivo --------------------------*/
+@media (max-width: 1024px){
+    .instagram-wrapper{
+        width: 90%;
+    }
+}
+
+@media (max-width: 650px){
+    .instagram-phone{
+        display: none;
+    }
+}
+
+@media (max-width: 650px){
+    .instagram-continua{
+        width: 90%;
+    }
+
+    .instagram-wrapper {
+        justify-content: center;
+    }
+}
